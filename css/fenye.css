@@ -1,0 +1,125 @@
+/* 通用样式 */
+*{
+	margin: 0;
+	padding: 0;
+}
+table{
+	border:0;
+	margin:0;
+	border-collapse:collapse;
+}
+/* 科室排班 */
+.maindown{
+	position: relative;
+	top: 100px;
+}
+.keban p{
+	font-size: 18px;
+	color: #000033;	
+}
+.keban a{
+	margin-left:8px ;
+	font-size: 14px;
+	color: #00B3EC;
+}
+.paiban-box{
+	width: 100%;
+	height: auto;
+	
+}
+.paiban-left{
+	width: 740px;
+	height: auto;
+	float: left;
+	position: relative;
+}
+.paiban-l,.paiban-r{
+	float: left;
+	width: 38px;
+	height: 325px;
+	background:#f2f8ff;
+}
+
+.paiban-l span{
+	text-align: center;
+	padding: 5px;
+	display: inline-block;
+	height: 90px;
+}
+.paiban-r{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+.paiban-box{
+	position: relative;
+	width: 658px;
+	height: 315px;
+	overflow: hidden;
+}
+.paiban-box-wrap{
+	position: absolute;
+	layout-flow: 660px;
+	float: left;
+	height: 325px;
+}
+.paiban-box-item{
+	float: left;
+	text-align: center;
+	width: 94px;
+	height: 325px;
+	
+	font-size: 12px;
+
+}
+.date{
+	width: 94px;
+	height: 45px;
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.status{
+	width: 94px;
+	height: 91px;
+	float: left;
+	line-height: 91px;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+}
+.status_full{
+	background: #e0eefd;
+	color: #F01414;
+}
+.paiban-right{
+	font-size: 12px;
+	line-height: 30px;
+	float: right;
+	width: 242px;
+	height: 307px;
+	border: 1px solid #dcdddd;
+	padding: 8px;
+	overflow: auto;
+}
+.paiban-right span{
+	color: #888888;
+	
+}
+.riqi{
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin-top: -2px;
+	position: relative;
+}
+.riqi img{
+	position: absolute;
+	top: 25px;
+	left: 390px;
+	
+}
+.riqi p{
+	display: inline-block;
+}

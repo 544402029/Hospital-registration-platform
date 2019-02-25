@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>城市医院挂号平台</title>
+		<link rel="stylesheet" href="css/fenye.css" />
+		<link rel="stylesheet" type="text/css" href="css/6-8.css"/>
+		<script src="js/jquery-1.12.4.min.js" type="text/javascript">
+		</script>
+		<script src="js/6-8.js" type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<!--
+        	作者：544402029@qq.com
+        	时间：2018-08-21
+        	描述：顶部
+        -->
+		<div class="top">
+			<div class="wrap c">
+				<div class="top-left c">
+					<img src="image/icon-call.png"/>
+					<p>010-114/116114电话预约</p>
+				</div>
+				<div class="top-right">
+					<p>欢迎来到城市预约挂号同一平台&nbsp;&nbsp;请
+						<a href="">登录</a>
+						<a href="">注册</a>
+					</p>
+					<a class="help" href="">帮助中心</a>
+				</div>
+			</div>
+		</div>	
+		<!--
+	    	作者：544402029@qq.com
+	    	时间：2018-08-21
+	    	描述：logo
+	    -->
+	   <div class="header wrap c">
+	   		<div class="logo">
+	   			<img src="image/logo.png"/>
+	   		</div>
+	   		<div class="sou">
+	   			<div class="qiehuan" >
+	   				<div class="innerbox">医院</div>
+	   				<div class="qiehuan-item">医院</div>
+	   				<div class="qiehuan-item">科室</div>	
+	   				<div class="qiehuan-item">疾病</div>	
+	   			</div>	
+	   			<input type="text" name="text" id="sousuo" value=""  placeholder="请输入搜索内容"/>
+	   			<input type="submit" name="submit" id="tijiao" value="" />
+	   		</div>
+	   </div>
+	    <!--
+	    	作者：544402029@qq.com
+	    	时间：2018-08-21
+	    	描述：nav
+	    -->
+	    <div class="nav">
+	    	<div class="wrap">
+	    		<div class="nav-left">
+	    			<div class="nav-left-item mr10"><a href="">首页</a></div>
+	    			<div class="nav-left-item mr10"><a href="">按医院挂号</a></div>
+	    			<div class="nav-left-item mr10"><a href="">按科室挂号</a></div>
+	    			<div class="nav-left-item mr10"><a href="">按疾病挂号</a></div>
+	    			<div class="nav-left-item mr10"><a href="">最新公告</a></div>
+	    		</div>
+	    		<div class="nav-right">
+	    			<div class="nav-right-item"><a href="">社会知名医院</a></div>
+	    		</div>
+	    	</div>
+	    </div>
+	    <!--
+	    	作者：544402029@qq.com
+	    	时间：2018-08-21
+	    	描述：医院简介
+	    -->
+		<div class="mainup wrap">
+			<div class="main-container-up c">
+				<p class="hospital left">北京协和医院<a class="guanzhu">关注医院</a></p>
+				<p class="level right"><span>等级:</span>三级甲等<span>区域:</span>东城区<span>分类:</span>中国医科院所属医院</p>
+			</div>
+			<div class="main-container-down c">
+				<div class="main-container-down-left">
+					<img src="image/hospital-1.jpg"/>
+				</div>
+				<div class="main-container-down-center">
+					<p><i id="cat1"></i>[东院]北京市东京区帅府园 [西院]北京市西城区大木仓胡同41号</p>
+					<p><i id="cat2"></i>http:/www.pumch.cn/</p>
+					<p><i id="cat3"></i>东院咨询:010-69155564;  西院资讯台:010-69158010</p>
+					<p><i id="cat4"></i>东院:106,108,110,111,116,684,685到东单路口北;41,104快,814到东单路口南;
+					1,52,728,802到东单路口西;20,25,37,39,到东单路口东;
+					</p>
+					<p>103,104,420,803到新东安市场;地铁1,5号线到东单.西院:68到辟才胡同东口;更多乘车路线详见须知</p>
+				</div>
+				<div class="main-container-down-right">
+					<img src="image/map-1.png"/>
+				</div>
+			</div>
+		</div>
+		<!--
+	    	作者：544402029@qq.com
+	    	时间：2018-08-21
+	    	描述：医院体系区域
+	    -->	
+    	<div id="maindown" class="maindown">
+    		<div class="wrap ">
+    			<div class="keban">
+    				<p>科班排班室<a href="6-8作业.html">返回科室列表</a></p>
+    				<br />
+    			</div>
+    			<div class="table c">
+    				<div class="paiban-left">
+    					<div class="paiban-l">
+    						<a class="prev" href="javascript:void(0)"><img  src="image/icon-scheduling-left.jpg"/></a>
+    						<div class"paiban-l-d">
+    							<span>上午</span>
+    							<span>下午</span>
+    							<span>晚上</span>
+    						</div>
+    					</div>
+    					<div class="paiban-box">
+    						<div class="paiban-box-wrap c" id="paiban-box-wrap"></div>
+    					</div>
+    					<div class="paiban-r">
+    						<a class="next"  href="javascript:void(0)"><img src="image/icon-scheduling-right.jpg"/></a>
+    						<div class="pai-ban-l-d"></div>
+    					</div>
+    				</div>
+    				
+    				<div class="paiban-right">
+    					<h3>预约规则</h3>
+	    				<p>预约时间:&nbsp;&nbsp;<span>7天</span></p>
+	    				<p>放号时间:&nbsp;&nbsp;<span>8:30</span></p>
+	    				<p>停挂时间:&nbsp;&nbsp;<span>下午14:00停止次日预约号(周五14:00后停挂至周一)</span></p>
+	    				<p>退号时间:&nbsp;&nbsp;<span>就诊前一工作日14:00前取消</span></p>
+	    				<p>特殊规则:<br /><span> ① 取号地点不同:西院区预约号取号地点:西院区门诊楼一层大厅挂号窗口取号.
+	    				东院区预约号取号地点:东院区老门诊楼一层大厅挂号窗口或新门诊楼挂号/收藏窗口区号.	
+    				</div>
+    			</div>
+    			<div class="riqi">
+    				<p><img src="image/icon-info.jpg"/>您还没有选择就诊日期</p>
+    			</div>
+    		</div>
+    	</div>	
+    	
+    	<!--
+        	作者：544402029@qq.com
+        	时间：2018-08-21
+        	描述：footer
+        -->
+        <div class="footer">
+        	<p>Copyright © 2018 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+        </div>
+	</body>
+</html>
